@@ -1,0 +1,64 @@
+.navbar {
+    align-items: center;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding: 1rem 0.75rem;
+}
+
+.navbar-title {
+    color: #fff;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    text-decoration: none;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navmenu > li {
+    list-style-type: none;
+    padding: 0 .75rem;
+}
+
+.menu-item, .menu-item:hover, .menu-item:visited {
+    position:relative;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Special Elite';
+    color: #000;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+
+.menu-item:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-item:hover:after {
+    transform: scaleX(1);
+}
+
+.sticky {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.sticky + .container {
+    padding-top: 60px;
+}

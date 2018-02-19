@@ -1,0 +1,75 @@
+.meme-container {
+  background-color: #F5F2F1;
+  box-shadow: 3px 3px 2px grey;
+  padding: 5px;
+}
+
+.meme-container div {
+  padding-top: 0px;
+  margin: 5px 0px;
+}
+
+.meme-title {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  width: 250px;
+}
+
+.meme-image {
+  width: 250px;
+}
+
+.meme-footer {
+  height: 0px;
+  transition: .5s;
+}
+
+.meme-footer button {
+  cursor: pointer;
+  opacity: 0;
+  height: 0px;
+  transition: .5s;
+}
+
+.meme-container:hover .meme-footer {
+  height: 30px;
+}
+
+.meme-container:hover .meme-footer button {
+  opacity: 1;
+  height: 35px;
+}
+
+.grid-item {
+  margin: 5px 5px 35px 5px;
+  width: 260px;
+} 
+
+.grid-item img {
+  width: 100%;
+}
+
+img {
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer-button {
+    background-color: #ff0000;
+    border: none;
+    color: #fff;
+    width: 100%;
+}
+
+.add-button {
+  background-color: transparent;
+  border-style: dashed;
+  border-radius: 5px;
+  border-color: black;
+  color: green;
+  cursor: pointer;
+  width: 75px;
+  height: 50px;
+}
